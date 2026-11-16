@@ -3,532 +3,858 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JA Pinturas | Pintura Residencial, Comercial e Predial de Alto Padrão</title>
-  <meta name="description" content="Especialistas em pintura de alto padrão, residencial, comercial e predial. Acabamento fino, isolamento completo, respeito ao prazo e qualidade garantida.">
-  
+  <title>JA Pinturas | Pintura e restauração de fachadas no litoral de SC</title>
+  <meta name="description" content="Pintura e acabamento técnico com lixamento sem pó, pintura airless e massa mecanizada. Restauração de fachadas e prédios no litoral catarinense. Peça seu orçamento.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://japinturas.com.br/">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://japinturas.com.br/">
+  <meta property="og:title" content="JA Pinturas | Pintura e restauração de fachadas no litoral de SC">
+  <meta property="og:description" content="Pintura e acabamento técnico com lixamento sem pó, pintura airless e massa mecanizada. Restauração de fachadas e prédios no litoral catarinense. Peça seu orçamento.">
+  <meta property="og:image" content="https://japinturas.com.br/assets/logo-ja.svg">
+  <meta property="og:locale" content="pt_BR">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/logo-symbol-blue.png">
-  
-  <!-- Google Fonts -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo-ja-symbol.svg">
+
+  <!-- Fontes do Google: Montserrat (Titulos e rotulos) e Inter (Texto corrido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Custom Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos da Pagina -->
   <link rel="stylesheet" href="style.css">
+
+  <!--
+  =======================================================
+  ESPACO PARA TAGS DE MONITORAMENTO E MIDIA PAGA
+  =======================================================
+  [GOOGLE TAG / GA4 / GTM]
+  <!-- Insira aqui a tag do Google (Google Tag Manager ou gtag.js) -->
+
+  [META PIXEL]
+  <!-- Insira aqui o codigo do Pixel da Meta para mensuracao de anuncios -->
+  =======================================================
+  -->
+
+  <!-- Schema.org LocalBusiness estruturado -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "JA Pinturas",
+    "image": "https://japinturas.com.br/assets/logo-ja.svg",
+    "description": "Empresa de pintura e acabamento técnico especializada em restauração de fachadas, pintura airless, massa mecanizada e lixamento sem pó no litoral de Santa Catarina.",
+    "telephone": "+5547992287236",
+    "url": "https://japinturas.com.br",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "[CIDADE BASE DO CLIENTE]",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-26.9926",
+      "longitude": "-48.6353"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:30",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/j.a_pinturas_litoral"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar-content">
-      <span><i class="fa-solid fa-shield-halved"></i> Qualidade garantida, isolamento completo e obra limpa</span>
-      <div class="topbar-links">
-        <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20JA%20Pinturas." target="_blank" rel="noopener">
-          <i class="fa-brands fa-whatsapp"></i> Atendimento Rápido
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header / Navigation -->
-  <header class="header" id="header">
-    <div class="container nav-container">
-      <a href="#home" class="logo-link">
-        <img src="assets/images/logo-horizontal-blue.png" alt="JA Pinturas" class="logo-img logo-light">
+  <!-- 1. Cabecalho fixo -->
+  <header class="site-header" id="cabecalho">
+    <div class="container header-container">
+      <a href="#inicio" class="header-logo" aria-label="JA Pinturas Inicio">
+        <img src="assets/logo-ja.svg" alt="JA Pinturas" class="logo-image" width="138" height="38">
       </a>
 
-      <nav class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">Início</a></li>
-          <li><a href="#sobre" class="nav-link">Sobre</a></li>
-          <li><a href="#servicos" class="nav-link">Serviços</a></li>
-          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
-          <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
-          <li><a href="#contato" class="nav-link">Contato</a></li>
+      <nav class="header-nav" id="menu-navegacao" aria-label="Navegacao principal">
+        <ul class="nav-links">
+          <li><a href="#servicos" class="nav-item">Serviços</a></li>
+          <li><a href="#tecnologia" class="nav-item">Tecnologia</a></li>
+          <li><a href="#obras" class="nav-item">Obras</a></li>
+          <li><a href="#como-funciona" class="nav-item">Como funciona</a></li>
+          <li><a href="#contato" class="nav-item">Contato</a></li>
         </ul>
-        <div class="nav-cta-mobile">
-          <a href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="btn btn-primary btn-sm">
-            <i class="fa-brands fa-whatsapp"></i> Orçamento Grátis
+        <div class="nav-mobile-footer">
+          <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20minha%20obra." target="_blank" rel="noopener" class="btn btn-primary btn-block">
+            Pedir orçamento pelo WhatsApp
           </a>
+          <p class="mobile-contact-info">Litoral de Santa Catarina · (47) 99228-7236</p>
         </div>
       </nav>
 
-      <div class="nav-actions">
-        <a href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="btn btn-primary nav-cta">
-          <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
+      <div class="header-actions">
+        <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20minha%20obra." target="_blank" rel="noopener" class="btn btn-outline-light header-cta">
+          Pedir orçamento
         </a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
-          <i class="fa-solid fa-bars"></i>
+        <button type="button" class="menu-btn" id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-navegacao">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
         </button>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-bg-overlay"></div>
+    <!-- 2. Hero -->
+    <section class="hero-section" id="inicio">
       <div class="container hero-container">
         <div class="hero-content">
-          <div class="badge">
-            <i class="fa-solid fa-star"></i> PINTURA DE ALTO PADRÃO & ACABAMENTO FINO
-          </div>
-          <h1 class="hero-title">
-            Transformando Ambientes com <span class="text-gradient">Precisão e Excelência</span>
-          </h1>
+          <div class="section-filet"></div>
+          <p class="section-label">PINTURA E ACABAMENTO TÉCNICO · LITORAL DE SC</p>
+          <h1 class="hero-title">Obra limpa, prazo cumprido e acabamento de alto padrão.</h1>
           <p class="hero-subtitle">
-            Soluções completas em pintura residencial, comercial e predial. Cuidamos do seu imóvel com proteção total de pisos e móveis, produtos de primeira linha e compromisso rigoroso com prazos.
+            Pintamos e restauramos prédios, casas e comércios com equipamentos profissionais que a maioria do mercado não usa: lixamento sem pó, pintura airless e massa aplicada por máquina.
           </p>
-          <div class="hero-cta-group">
-            <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20técnica%20ou%20orçamento." target="_blank" class="btn btn-primary btn-lg">
-              <i class="fa-brands fa-whatsapp"></i> Falar com Especialista
+
+          <div class="hero-buttons">
+            <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20minha%20obra." target="_blank" rel="noopener" class="btn btn-solid-white">
+              Pedir orçamento pelo WhatsApp
             </a>
-            <a href="#servicos" class="btn btn-outline btn-lg">
-              Ver Serviços <i class="fa-solid fa-arrow-down"></i>
+            <a href="#servicos" class="hero-text-link">
+              Ver serviços <span class="link-arrow">↓</span>
             </a>
           </div>
 
-          <!-- Quick badges -->
-          <div class="hero-features">
-            <div class="hero-feat-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Isolamento e Limpeza Pós-Obra</span>
+          <!-- Faixa com tres dados curtos -->
+          <div class="hero-metrics-strip">
+            <div class="hero-metric-item">
+              <span class="metric-value">[ANOS]</span>
+              <span class="metric-caption">anos de mercado</span>
             </div>
-            <div class="hero-feat-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Tintas Premium e Durabilidade</span>
+            <div class="hero-metric-item">
+              <span class="metric-value">[NÚMERO]</span>
+              <span class="metric-caption">obras entregues</span>
             </div>
-            <div class="hero-feat-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Orçamento Transparente</span>
+            <div class="hero-metric-item">
+              <span class="metric-value">NR-35</span>
+              <span class="metric-caption">equipe habilitada</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-card hero-main-card">
-            <div class="card-logo-center">
-              <img src="assets/images/logo-symbol-blue.png" alt="JA Pinturas Símbolo" class="symbol-img">
-            </div>
-            <div class="hero-card-stats">
-              <div class="stat-box">
-                <span class="stat-number">+10</span>
-                <span class="stat-desc">Anos de experiência</span>
-              </div>
-              <div class="stat-box">
-                <span class="stat-number">100%</span>
-                <span class="stat-desc">Clientes satisfeitos</span>
-              </div>
-            </div>
-            <div class="hero-card-footer">
-              <div class="pulse-status">
-                <span class="pulse-dot"></span>
-                <span>Equipe pronta para atender sua região</span>
-              </div>
+        <div class="hero-media">
+          <div class="diagonal-frame">
+            <div class="photo-placeholder hero-photo-box" role="img" aria-label="Foto: fachada de edifício residencial concluída pela JA Pinturas no litoral de SC">
+              <div class="placeholder-technical-badge">REGISTRO DE OBRA</div>
+              <p class="placeholder-caption">Foto: fachada de edifício residencial concluída no litoral de SC</p>
+              <span class="placeholder-meta">Dimensão sugerida: 1200x900px · Formato WebP</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Highlights Banner -->
-    <section class="metrics-bar">
-      <div class="container metrics-grid">
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
-          <div class="metric-info">
-            <h4>Padrão Impecável</h4>
-            <p>Superfícies perfeitamente niveladas e acabamento suave</p>
-          </div>
-        </div>
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-broom"></i></div>
-          <div class="metric-info">
-            <h4>Obra 100% Limpa</h4>
-            <p>Protegemos móveis, pisos e esquadrias do início ao fim</p>
-          </div>
-        </div>
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-clock"></i></div>
-          <div class="metric-info">
-            <h4>Prazo Garantido</h4>
-            <p>Cronograma transparente cumprido sem imprevistos</p>
-          </div>
-        </div>
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-file-contract"></i></div>
-          <div class="metric-info">
-            <h4>Garantia Total</h4>
-            <p>Segurança técnica e suporte pós-entrega</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about" id="sobre">
-      <div class="container about-grid">
-        <div class="about-image-wrapper">
-          <div class="about-badge">
-            <span class="about-badge-title">JA PINTURAS</span>
-            <span class="about-badge-sub">Excelência em cada detalhe</span>
-          </div>
-          <div class="about-card-banner">
-            <img src="assets/images/logo-symbol-blue.png" alt="JA Pinturas" class="about-symbol-decor">
-            <h3>Mais do que pintar, valorizamos seu patrimônio.</h3>
-            <p>Aplicamos rigor técnico em preparação, lixamento e pintura com as melhores marcas do mercado.</p>
-          </div>
-        </div>
-
-        <div class="about-text">
-          <div class="section-tag">QUEM SOMOS</div>
-          <h2 class="section-title">Profissionais comprometidos com a qualidade da sua obra</h2>
-          <p class="section-desc">
-            A <strong>JA Pinturas</strong> nasceu com o propósito de elevar o nível dos serviços de pintura, combinando técnica apurada, atendimento cordial e respeito ao ambiente do cliente.
-          </p>
-          <p class="section-desc">
-            Sabemos que uma pintura bem executada vai além da cor: ela protege o imóvel, valoriza a arquitetura e renova a energia do seu espaço. Por isso, utilizamos técnicas modernas de isolamento e preparação de superfícies para entregar resultados duradouros e sem dor de cabeça.
-          </p>
-
-          <div class="about-checklist">
-            <div class="check-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <div>
-                <strong>Tintas e insumos de 1ª linha</strong>
-                <span>Trabalhamos com marcas consagradas como Suvinil, Coral e Sherwin Williams.</span>
-              </div>
-            </div>
-            <div class="check-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <div>
-                <strong>Equipe especializada e uniforme</strong>
-                <span>Profissionais experientes, educados e com postura ética.</span>
-              </div>
-            </div>
-            <div class="check-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <div>
-                <strong>Orçamento detalhado e sem custos ocultos</strong>
-                <span>Você sabe exatamente o que está pagando e o prazo acordado.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-cta-row">
-            <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20conversar%20sobre%20meu%20projeto." target="_blank" class="btn btn-primary">
-              <i class="fa-brands fa-whatsapp"></i> Falar com a Equipe
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section services" id="servicos">
+    <!-- 3. Servicos (Secao Principal) -->
+    <section class="services-section" id="servicos">
       <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">NOSSOS SERVIÇOS</div>
-          <h2 class="section-title">Soluções completas para todos os portes</h2>
-          <p class="section-desc max-w-700">
-            Da restauração refinada de salas e quartos à pintura técnica de fachadas e galpões industriais.
+        <div class="section-heading-block">
+          <div class="section-filet"></div>
+          <p class="section-label">01 · SERVIÇOS</p>
+          <h2 class="section-title">Seis serviços, um padrão de entrega.</h2>
+          <p class="section-intro">
+            Organizamos nosso atendimento técnico em duas frentes para atender com precisão desde condomínios verticais até residências ocupadas.
           </p>
         </div>
 
-        <div class="services-grid">
-          <!-- Service 1 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
-            <h3 class="service-title">Pintura Residencial & Apartamentos</h3>
-            <p class="service-text">
-              Paredes, tetos, portas, rodapés e sancas. Preparação minuciosa com massa corrida, lixamento sem poeira excessiva e acabamento impecável.
-            </p>
-            <ul class="service-bullets">
-              <li>Pintura interna e externa</li>
-              <li>Isolamento de pisos e móveis</li>
-              <li>Tinta acrílica, lavável e fosca</li>
-            </ul>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20em%20Pintura%20Residencial." target="_blank" class="service-link">
-              Solicitar cotação <i class="fa-solid fa-arrow-right"></i>
-            </a>
+        <div class="services-editorial-layout">
+          <div class="services-content-col">
+            <!-- Grupo A: Obras grandes e fachadas -->
+            <div class="services-group">
+              <div class="group-header">
+                <span class="group-tag">GRUPO A</span>
+                <h3 class="group-title">Obras grandes e fachadas</h3>
+              </div>
+
+              <!-- Servico 01 -->
+              <article class="service-row is-active" data-service="1" data-photo="Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco" data-detail="Tratamento preventivo contra maresia, recuperação de fissuras e acabamento elástico de longa duração.">
+                <div class="service-row-summary" tabindex="0" role="button" aria-expanded="true">
+                  <span class="service-number">01</span>
+                  <div class="service-meta">
+                    <h4 class="service-name">Restauração de edifícios</h4>
+                    <p class="service-desc">Recuperação de fachadas, reboco e pintura externa de prédios.</p>
+                  </div>
+                  <span class="row-accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="service-row-body">
+                  <div class="service-benefit-box">
+                    <strong class="benefit-label">Benefício:</strong>
+                    <span class="benefit-text">Valoriza o imóvel e protege a estrutura por mais tempo.</span>
+                  </div>
+                  <div class="service-ideal-tag">IDEAL PARA CONDOMÍNIOS E SÍNDICOS</div>
+                  <div class="service-mobile-photo">
+                    <div class="photo-placeholder" role="img" aria-label="Foto: restauração de fachada predial com recuperação de reboco">
+                      <p class="placeholder-caption">Foto: restauração de fachada predial com recuperação de reboco</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Restauração%20de%20edifícios." target="_blank" rel="noopener" class="service-action-link">
+                    Pedir orçamento deste serviço →
+                  </a>
+                </div>
+              </article>
+
+              <!-- Servico 02 -->
+              <article class="service-row" data-service="2" data-photo="Foto: aplicação de tinta em fachada por equipamento airless de alta pressão" data-detail="Filme uniforme de tinta sem marcas de rolo, velocidade até 4x superior e economia real de insumos.">
+                <div class="service-row-summary" tabindex="0" role="button" aria-expanded="false">
+                  <span class="service-number">02</span>
+                  <div class="service-meta">
+                    <h4 class="service-name">Pintura airless</h4>
+                    <p class="service-desc">Pintura com equipamento de alta pressão, sem ar.</p>
+                  </div>
+                  <span class="row-accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="service-row-body">
+                  <div class="service-benefit-box">
+                    <strong class="benefit-label">Benefício:</strong>
+                    <span class="benefit-text">Cobertura uniforme, mais rapidez e menos desperdício de tinta.</span>
+                  </div>
+                  <div class="service-ideal-tag">IDEAL PARA FACHADAS, GALPÕES E GRANDES ÁREAS</div>
+                  <div class="service-mobile-photo">
+                    <div class="photo-placeholder" role="img" aria-label="Foto: equipamento airless em operação">
+                      <p class="placeholder-caption">Foto: equipamento airless em operação contínua</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Pintura%20airless." target="_blank" rel="noopener" class="service-action-link">
+                    Pedir orçamento deste serviço →
+                  </a>
+                </div>
+              </article>
+
+              <!-- Servico 03 -->
+              <article class="service-row" data-service="3" data-photo="Foto: projeção de massa corrida mecanizada em paredes internas de grande porte" data-detail="Aplicação regular de massa niveladora para posterior lixamento técnico livre de poeira.">
+                <div class="service-row-summary" tabindex="0" role="button" aria-expanded="false">
+                  <span class="service-number">03</span>
+                  <div class="service-meta">
+                    <h4 class="service-name">Massa corrida mecanizada</h4>
+                    <p class="service-desc">Massa aplicada com máquina em vazão contínua.</p>
+                  </div>
+                  <span class="row-accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="service-row-body">
+                  <div class="service-benefit-box">
+                    <strong class="benefit-label">Benefício:</strong>
+                    <span class="benefit-text">Superfície uniforme e prazo menor em grandes áreas.</span>
+                  </div>
+                  <div class="service-ideal-tag">IDEAL PARA CONSTRUTORAS E OBRAS</div>
+                  <div class="service-mobile-photo">
+                    <div class="photo-placeholder" role="img" aria-label="Foto: aplicação de massa corrida por máquina">
+                      <p class="placeholder-caption">Foto: aplicação de massa corrida mecanizada</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Massa%20corrida%20mecanizada." target="_blank" rel="noopener" class="service-action-link">
+                    Pedir orçamento deste serviço →
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Grupo B: Acabamento e ambientes -->
+            <div class="services-group">
+              <div class="group-header">
+                <span class="group-tag">GRUPO B</span>
+                <h3 class="group-title">Acabamento e ambientes</h3>
+              </div>
+
+              <!-- Servico 04 -->
+              <article class="service-row" data-service="4" data-photo="Foto: detalhe de textura projetada com acabamento regular e hidrorrepelente" data-detail="Camada protetora texturizada resistente ao impacto climático e intempéries do litoral.">
+                <div class="service-row-summary" tabindex="0" role="button" aria-expanded="false">
+                  <span class="service-number">04</span>
+                  <div class="service-meta">
+                    <h4 class="service-name">Textura projetada</h4>
+                    <p class="service-desc">Textura aplicada por projeção mecânica.</p>
+                  </div>
+                  <span class="row-accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="service-row-body">
+                  <div class="service-benefit-box">
+                    <strong class="benefit-label">Benefício:</strong>
+                    <span class="benefit-text">Padrão homogêneo em toda a parede.</span>
+                  </div>
+                  <div class="service-ideal-tag">IDEAL PARA CONSTRUTORAS, FACHADAS E RESIDÊNCIAS</div>
+                  <div class="service-mobile-photo">
+                    <div class="photo-placeholder" role="img" aria-label="Foto: textura projetada aplicada em parede residencial">
+                      <p class="placeholder-caption">Foto: detalhe de textura projetada de alta resistência</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Textura%20projetada." target="_blank" rel="noopener" class="service-action-link">
+                    Pedir orçamento deste serviço →
+                  </a>
+                </div>
+              </article>
+
+              <!-- Servico 05 -->
+              <article class="service-row" data-service="5" data-photo="Foto: parede de sala com acabamento técnico em cimento queimado fosco" data-detail="Estética monolítica artesanal com selamento contra manchas e acabamento aveludado.">
+                <div class="service-row-summary" tabindex="0" role="button" aria-expanded="false">
+                  <span class="service-number">05</span>
+                  <div class="service-meta">
+                    <h4 class="service-name">Cimento queimado</h4>
+                    <p class="service-desc">Acabamento decorativo em paredes internas e externas.</p>
+                  </div>
+                  <span class="row-accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="service-row-body">
+                  <div class="service-benefit-box">
+                    <strong class="benefit-label">Benefício:</strong>
+                    <span class="benefit-text">Estética contemporânea e sofisticada.</span>
+                  </div>
+                  <div class="service-ideal-tag">IDEAL PARA RESIDÊNCIAS, ARQUITETOS E COMÉRCIOS</div>
+                  <div class="service-mobile-photo">
+                    <div class="photo-placeholder" role="img" aria-label="Foto: acabamento de cimento queimado">
+                      <p class="placeholder-caption">Foto: parede com cimento queimado em ambiente residencial</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Cimento%20queimado." target="_blank" rel="noopener" class="service-action-link">
+                    Pedir orçamento deste serviço →
+                  </a>
+                </div>
+              </article>
+
+              <!-- Servico 06 -->
+              <article class="service-row" data-service="6" data-photo="Foto: lixadeira orbital Mirka conectada ao aspirador industrial durante preparação" data-detail="Sem dispersão de pó em móveis, aparelhos de ar-condicionado ou eletrônicos no imóvel.">
+                <div class="service-row-summary" tabindex="0" role="button" aria-expanded="false">
+                  <span class="service-number">06</span>
+                  <div class="service-meta">
+                    <h4 class="service-name">Lixamento Mirka zero pó</h4>
+                    <p class="service-desc">Lixamento técnico com aspiração acoplada diretamente à lixadeira.</p>
+                  </div>
+                  <span class="row-accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="service-row-body">
+                  <div class="service-benefit-box">
+                    <strong class="benefit-label">Benefício:</strong>
+                    <span class="benefit-text">Obra sem pó no ambiente, ideal para quem continua morando ou trabalhando no imóvel.</span>
+                  </div>
+                  <div class="service-ideal-tag">IDEAL PARA RESIDÊNCIAS E COMÉRCIOS EM USO</div>
+                  <div class="service-mobile-photo">
+                    <div class="photo-placeholder" role="img" aria-label="Foto: lixamento Mirka sem poeira">
+                      <p class="placeholder-caption">Foto: lixadeira Mirka aspirando partículas na origem</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Lixamento%20Mirka%20zero%20pó." target="_blank" rel="noopener" class="service-action-link">
+                    Pedir orçamento deste serviço →
+                  </a>
+                </div>
+              </article>
+            </div>
           </div>
 
-          <!-- Service 2 -->
-          <div class="service-card highlight-card">
-            <div class="service-badge">Mais Solicitado</div>
-            <div class="service-icon"><i class="fa-solid fa-building"></i></div>
-            <h3 class="service-title">Pintura Predial & Fachadas</h3>
-            <p class="service-text">
-              Revitalização estética e proteção estrutural para condomínios, prédios residenciais e comerciais com segurança e normas regulamentadoras.
-            </p>
-            <ul class="service-bullets">
-              <li>Lavagem com hidrojateamento</li>
-              <li>Tratamento de trincas e infiltrações</li>
-              <li>Impermeabilização e tintas elastoméricas</li>
-            </ul>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20em%20Pintura%20Predial." target="_blank" class="service-link">
-              Solicitar cotação <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-store"></i></div>
-            <h3 class="service-title">Pintura Comercial & Corporativa</h3>
-            <p class="service-text">
-              Lojas, consultórios, escritórios e galpões. Execução planejada com agilidade e horários flexíveis para não interromper sua rotina de negócios.
-            </p>
-            <ul class="service-bullets">
-              <li>Execução rápida e eficiente</li>
-              <li>Pintura noturna ou fins de semana</li>
-              <li>Padrão visual corporativo</li>
-            </ul>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20em%20Pintura%20Comercial." target="_blank" class="service-link">
-              Solicitar cotação <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-brush"></i></div>
-            <h3 class="service-title">Efeitos Especiais & Texturas</h3>
-            <p class="service-text">
-              Transforme paredes em verdadeiras obras de arte com efeitos decorativos modernos e sofisticados que valorizam a arquitetura de interiores.
-            </p>
-            <ul class="service-bullets">
-              <li>Cimento Queimado autêntico</li>
-              <li>Textura projetada e marmorato</li>
-              <li>Grafiato e pintura geométrica</li>
-            </ul>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20em%20Efeitos%20Decorativos." target="_blank" class="service-link">
-              Solicitar cotação <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- Service 5 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-droplet-slash"></i></div>
-            <h3 class="service-title">Impermeabilização & Umidade</h3>
-            <p class="service-text">
-              Solução definitiva contra mofo, infiltrações e descascamento. Tratamento de umidade ascendente e aplicação de produtos impermeabilizantes.
-            </p>
-            <ul class="service-bullets">
-              <li>Diagnóstico da causa da umidade</li>
-              <li>Barreiras impermeabilizantes</li>
-              <li>Proteção fungicida e antimofo</li>
-            </ul>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Preciso%20de%20tratamento%20de%20infiltração%20e%20pintura." target="_blank" class="service-link">
-              Solicitar cotação <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- Service 6 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-hammer"></i></div>
-            <h3 class="service-title">Madeiras, Portões & Esquadrias</h3>
-            <p class="service-text">
-              Pintura a esmalte sintético e aplicação de vernizes de alta durabilidade em grades, portões metálicos, portas, pérgolas e decks de madeira.
-            </p>
-            <ul class="service-bullets">
-              <li>Tratamento anticorrosivo</li>
-              <li>Lixamento e restauração de madeira</li>
-              <li>Verniz náutico e filtro solar UV</li>
-            </ul>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20em%20Pintura%20de%20madeira%20e%20ferro." target="_blank" class="service-link">
-              Solicitar cotação <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
+          <!-- Desktop Preview Sticky Panel -->
+          <aside class="services-preview-panel" aria-hidden="true">
+            <div class="preview-sticky-wrapper">
+              <div class="preview-box">
+                <div class="photo-placeholder preview-image-placeholder">
+                  <span class="preview-service-code" id="preview-code">01</span>
+                  <p class="placeholder-caption" id="preview-caption">Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco</p>
+                </div>
+                <div class="preview-caption-block">
+                  <span class="preview-note-title">DETALHE OPERACIONAL</span>
+                  <p class="preview-note-text" id="preview-note">Tratamento preventivo contra maresia, recuperação de fissuras e acabamento elástico de longa duração.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us / Process Section -->
-    <section class="section differentials" id="diferenciais">
+    <!-- 4. Tecnologia que faz diferenca -->
+    <section class="tech-section" id="tecnologia">
       <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">POR QUE A JA PINTURAS</div>
-          <h2 class="section-title">O padrão que faz a diferença no resultado final</h2>
-          <p class="section-desc max-w-700">
-            Nosso método garante tranquilidade do primeiro contato até a entrega das chaves com tudo impecavelmente limpo.
+        <div class="section-heading-block light-heading">
+          <div class="section-filet filet-white"></div>
+          <p class="section-label label-white">02 · TECNOLOGIA</p>
+          <h2 class="section-title text-white">O equipamento muda o resultado.</h2>
+          <p class="section-intro text-dim">
+            Investimos em ferramental técnico para entregar acabamento de fábrica, eliminar retrabalho e manter o imóvel utilizável durante a execução.
           </p>
         </div>
 
-        <div class="diff-grid">
-          <div class="diff-step">
-            <div class="diff-step-num">01</div>
-            <h4>Avaliação e Orçamento</h4>
-            <p>Análise técnica detalhada das condições da parede, metragem e indicação precisa dos materiais ideais.</p>
+        <div class="tech-grid">
+          <!-- Bloco 1: Mirka zero po -->
+          <div class="tech-card">
+            <div class="photo-placeholder tech-photo" role="img" aria-label="Foto: equipamento Mirka com mangueira de sucção conectada">
+              <p class="placeholder-caption">Foto: lixadeira orbital Mirka com aspiração ativa</p>
+              <span class="placeholder-meta">Equipamento industrial</span>
+            </div>
+            <div class="tech-info">
+              <h3 class="tech-name">Mirka zero pó</h3>
+              <p class="tech-desc">
+                O pó do lixamento é aspirado na hora. Sua casa ou loja continua limpa durante a obra.
+              </p>
+            </div>
           </div>
-          <div class="diff-step">
-            <div class="diff-step-num">02</div>
-            <h4>Proteção Total</h4>
-            <p>Isolamos rigorosamente rodapés, tomadas, vidros, pisos e mobílias com lonas e fitas especiais.</p>
+
+          <!-- Bloco 2: Airless -->
+          <div class="tech-card">
+            <div class="photo-placeholder tech-photo" role="img" aria-label="Foto: máquina de pintura airless profissional">
+              <p class="placeholder-caption">Foto: bomba airless de alta pressão em operação</p>
+              <span class="placeholder-meta">Equipamento industrial</span>
+            </div>
+            <div class="tech-info">
+              <h3 class="tech-name">Airless</h3>
+              <p class="tech-desc">
+                A tinta é aplicada em alta pressão, com camada uniforme e mais rapidez em grandes áreas.
+              </p>
+            </div>
           </div>
-          <div class="diff-step">
-            <div class="diff-step-num">03</div>
-            <h4>Preparação Perfeita</h4>
-            <p>Lixamento, correção de trincas, massa corrida e fundo preparador para máxima aderência e durabilidade.</p>
-          </div>
-          <div class="diff-step">
-            <div class="diff-step-num">04</div>
-            <h4>Pintura e Limpeza</h4>
-            <p>Aplicação uniforme com ferramentas profissionais, remoção de todas as proteções e entrega limpa.</p>
+
+          <!-- Bloco 3: Massa mecanizada -->
+          <div class="tech-card">
+            <div class="photo-placeholder tech-photo" role="img" aria-label="Foto: máquina de projeção contínua de massa corrida">
+              <p class="placeholder-caption">Foto: sistema mecanizado de aplicação de massa</p>
+              <span class="placeholder-meta">Equipamento industrial</span>
+            </div>
+            <div class="tech-info">
+              <h3 class="tech-name">Massa mecanizada</h3>
+              <p class="tech-desc">
+                A máquina aplica a massa de forma contínua, com acabamento mais regular e prazo menor.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="section testimonials" id="depoimentos">
+    <!-- 5. Obras realizadas -->
+    <section class="works-section" id="obras">
       <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">DEPOIMENTOS</div>
-          <h2 class="section-title">O que dizem os nossos clientes</h2>
-          <p class="section-desc max-w-700">
-            A satisfação e recomendação de quem já confiou na JA Pinturas.
+        <div class="section-heading-block">
+          <div class="section-filet"></div>
+          <p class="section-label">03 · OBRAS</p>
+          <h2 class="section-title">Antes e depois.</h2>
+          <p class="section-intro">
+            Arraste a linha divisória horizontalmente para comparar o estado original da superfície com a entrega técnica final.
           </p>
         </div>
 
-        <div class="testimonials-grid">
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testi-text">
-              "Equipe extremamente profissional e pontual. Pintaram todo o meu apartamento e o maior diferencial foi o cuidado com os móveis e a limpeza no final. Ficou perfeito!"
-            </p>
-            <div class="testi-author">
-              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <strong>Carlos Eduardo S.</strong>
-                <span>Pintura Residencial (Apartamento)</span>
+        <!-- Seletor de Obras para o comparador -->
+        <div class="works-tab-nav" role="tablist" aria-label="Selecionar obra para comparacao">
+          <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" data-target="work-1">
+            01 Fachada predial
+          </button>
+          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-target="work-2">
+            02 Interior residencial
+          </button>
+          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-target="work-3">
+            03 Cimento queimado
+          </button>
+        </div>
+
+        <!-- Componente Comparador Interativo -->
+        <div class="slider-comparison-box" id="comparador-obras">
+          <div class="comparison-visual" id="comparison-stage">
+            <!-- Imagem Depois (Fundo base) -->
+            <div class="comp-layer comp-after">
+              <div class="photo-placeholder comp-box-after" id="after-box" role="img" aria-label="Foto do resultado final após entrega da JA Pinturas">
+                <span class="comp-badge badge-after">DEPOIS</span>
+                <p class="placeholder-caption" id="after-caption">Foto: fachada totalmente restaurada, impermeabilizada e pintada</p>
               </div>
+            </div>
+
+            <!-- Imagem Antes (Camada recortada dinamicamente via JS) -->
+            <div class="comp-layer comp-before" id="before-layer">
+              <div class="photo-placeholder comp-box-before" id="before-box" role="img" aria-label="Foto do estado original antes do tratamento">
+                <span class="comp-badge badge-before">ANTES</span>
+                <p class="placeholder-caption" id="before-caption">Foto: fachada com descascamento, fungos e trincas de dilatação</p>
+              </div>
+            </div>
+
+            <!-- Linha e Alca do Slider -->
+            <div class="slider-divider" id="slider-handle">
+              <div class="slider-handle-line"></div>
+              <div class="slider-handle-knob" aria-hidden="true">
+                <span>◀ ▶</span>
+              </div>
+            </div>
+
+            <!-- Controle deslizante nativo para acessibilidade por teclado -->
+            <input type="range" min="0" max="100" value="50" class="sr-only-range" id="slider-range-input" aria-label="Controle deslizante de comparacao antes e depois">
+          </div>
+
+          <!-- Legenda editorial da obra exibida -->
+          <div class="comparison-caption-footer">
+            <span class="comparison-location" id="comp-location">Obra 01: Edifício residencial no litoral de SC</span>
+            <span class="comparison-worktype" id="comp-worktype">Tratamento de trincas, selador acrílico e pintura airless</span>
+          </div>
+        </div>
+
+        <!-- Grade Assimetrica de Galeria (6 fotos com legendas curtas) -->
+        <div class="gallery-heading">
+          <h3 class="gallery-title">Registros de campo</h3>
+          <p class="gallery-sub">Acompanhamento fotográfico de rotina em intervenções concluídas.</p>
+        </div>
+
+        <div class="asymmetric-gallery-grid">
+          <!-- Foto 1 -->
+          <div class="gallery-item item-large">
+            <div class="photo-placeholder gallery-photo" role="img" aria-label="Foto: fachada de condomínio vertical entregue em Balneário Camboriú">
+              <p class="placeholder-caption">Foto: fachada de condomínio vertical</p>
+            </div>
+            <p class="gallery-caption">Restauração externa · Balneário Camboriú</p>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="gallery-item">
+            <div class="photo-placeholder gallery-photo" role="img" aria-label="Foto: aplicação uniforme de pintura airless em galpão comercial">
+              <p class="placeholder-caption">Foto: pintura técnica airless em pé-direito duplo</p>
+            </div>
+            <p class="gallery-caption">Pintura comercial · Itajaí</p>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="gallery-item">
+            <div class="photo-placeholder gallery-photo" role="img" aria-label="Foto: living com parede tratada em cimento queimado fosco">
+              <p class="placeholder-caption">Foto: detalhe de cimento queimado em living</p>
+            </div>
+            <p class="gallery-caption">Cimento queimado · Itapema</p>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="gallery-item">
+            <div class="photo-placeholder gallery-photo" role="img" aria-label="Foto: textura projetada em muro e fachada de residência">
+              <p class="placeholder-caption">Foto: textura projetada de alta espessura</p>
+            </div>
+            <p class="gallery-caption">Textura projetada · Porto Belo</p>
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="gallery-item">
+            <div class="photo-placeholder gallery-photo" role="img" aria-label="Foto: preparação de teto de gesso e sancas com lixamento zero pó">
+              <p class="placeholder-caption">Foto: preparação de forro sem sujeira no ambiente</p>
+            </div>
+            <p class="gallery-caption">Lixamento Mirka · Navegantes</p>
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="gallery-item item-wide">
+            <div class="photo-placeholder gallery-photo" role="img" aria-label="Foto: vista frontal de edifício residencial restaurado">
+              <p class="placeholder-caption">Foto: edifício residencial com pintura impermeabilizante</p>
+            </div>
+            <p class="gallery-caption">Pintura predial de grande porte · Balneário Camboriú</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Para quem atendemos -->
+    <section class="audience-section" id="para-quem">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-filet"></div>
+          <p class="section-label">04 · PARA QUEM</p>
+          <h2 class="section-title">Soluções alinhadas à rotina de cada cliente.</h2>
+          <p class="section-intro">
+            Entendemos as prioridades técnicas, burocráticas e humanas de cada tipo de contratação.
+          </p>
+        </div>
+
+        <div class="audience-columns">
+          <!-- Coluna 1 -->
+          <div class="audience-col">
+            <span class="audience-number">01</span>
+            <h3 class="audience-target">Condomínios e síndicos</h3>
+            <p class="audience-quote">
+              "Fachada entregue com segurança, cronograma claro e prestação de contas para os moradores."
+            </p>
+            <p class="audience-detail">
+              Documentação em dia, equipe com certificação para trabalho em altura (NR-35) e comunicação prévia com a administração para minimizar o impacto na rotina dos condôminos.
+            </p>
+          </div>
+
+          <!-- Coluna 2 -->
+          <div class="audience-col">
+            <span class="audience-number">02</span>
+            <h3 class="audience-target">Construtoras, arquitetos e engenheiros</h3>
+            <p class="audience-quote">
+              "Produtividade e padrão de entrega para não atrasar o seu cronograma."
+            </p>
+            <p class="audience-detail">
+              Mecanização de processos com airless e projeção de massa para atingir metas de entrega exigentes, mantendo fidelidade estrita ao caderno de especificações técnicas do projeto.
+            </p>
+          </div>
+
+          <!-- Coluna 3 -->
+          <div class="audience-col">
+            <span class="audience-number">03</span>
+            <h3 class="audience-target">Residências e comércios</h3>
+            <p class="audience-quote">
+              "Obra limpa e organizada, mesmo com você dentro do imóvel."
+            </p>
+            <p class="audience-detail">
+              Isolamento cirúrgico de pisos, esquadrias e mobiliário. Lixamento aspirado na fonte para que famílias e equipes de trabalho não precisem desocupar o espaço durante a obra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Como funciona -->
+    <section class="process-section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-filet"></div>
+          <p class="section-label">05 · PROCESSO</p>
+          <h2 class="section-title">Do primeiro contato à vistoria final.</h2>
+          <p class="section-intro">
+            Quatro etapas claras para que você saiba exatamente o que esperar de prazo, custo e execução.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Passo 01 -->
+          <div class="process-step">
+            <div class="step-num-badge">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Contato pelo WhatsApp</h3>
+              <p class="step-desc">
+                Você envia fotos, vídeos ou a metragem estimada da obra para um alinhamento inicial rápido e direto.
+              </p>
             </div>
           </div>
 
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="testi-text">
-              "Contratamos a JA Pinturas para a revitalização da fachada do nosso condomínio. Cumpriram o cronograma à risca, com segurança total e acabamento de primeira linha."
-            </p>
-            <div class="testi-author">
-              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <strong>Mariana F. Lemos</strong>
-                <span>Síndica Condominial</span>
-              </div>
+          <!-- Passo 02 -->
+          <div class="process-step">
+            <div class="step-num-badge">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Visita técnica e medição</h3>
+              <p class="step-desc">
+                Vamos até o imóvel no litoral catarinense para inspecionar superfícies, umidade, trincas e logística.
+              </p>
             </div>
           </div>
 
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <!-- Passo 03 -->
+          <div class="process-step">
+            <div class="step-num-badge">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Orçamento detalhado</h3>
+              <p class="step-desc">
+                Proposta clara com descrição exata dos materiais sugeridos, cronograma por etapa e condições de pagamento.
+              </p>
             </div>
-            <p class="testi-text">
-              "Fizeram o efeito cimento queimado na recepção do meu escritório e ficou sensacional! Muito caprichosos e atenciosos. Recomendo de olhos fechados."
-            </p>
-            <div class="testi-author">
-              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-              <div>
-                <strong>Rodrigo Mattos</strong>
-                <span>Escritório Comercial</span>
-              </div>
+          </div>
+
+          <!-- Passo 04 -->
+          <div class="process-step">
+            <div class="step-num-badge">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Execução e entrega com vistoria</h3>
+              <p class="step-desc">
+                Início com isolamento preventivo, aplicação com maquinário técnico e entrega limpa após conferência minuciosa.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section" id="contato">
-      <div class="container cta-box">
-        <div class="cta-content">
-          <span class="cta-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> SOLICITE SEU ORÇAMENTO SEM COMPROMISSO</span>
-          <h2>Pronto para transformar seu imóvel com a JA Pinturas?</h2>
-          <p>
-            Entre em contato agora mesmo via WhatsApp. Enviamos nossa estimativa técnica e agendamos uma visita com rapidez e praticidade.
+    <!-- 8. Confianca -->
+    <section class="trust-section" id="confianca">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-filet"></div>
+          <p class="section-label">06 · CONFIANÇA</p>
+          <h2 class="section-title">Segurança técnica e compromisso formal.</h2>
+          <p class="section-intro">
+            Avaliações de quem acompanhou nossas entregas no litoral e atestou nosso respeito a prazos e ambientes.
           </p>
-          <div class="cta-buttons">
-            <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20receber%20um%20orçamento%20para%20pintura." target="_blank" class="btn btn-whatsapp btn-lg">
-              <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
-            </a>
-            <a href="tel:+5500000000000" class="btn btn-light btn-lg">
-              <i class="fa-solid fa-phone"></i> Ligar Agora
+        </div>
+
+        <!-- Grade de Depoimentos (Placeholders para 3 depoimentos) -->
+        <div class="testimonials-editorial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "[Espaço para depoimento do cliente 01 sobre a qualidade técnica da restauração de fachada, pontualidade no prazo e segurança da equipe durante a execução no condomínio.]"
+            </p>
+            <div class="testimonial-meta">
+              <strong class="testimonial-name">[Nome do Cliente 01]</strong>
+              <span class="testimonial-role">[Síndico / Condomínio Residencial] · [Cidade - SC]</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "[Espaço para depoimento do cliente 02 destacando a ausência de poeira pelo lixamento Mirka e o cuidado com a proteção de móveis e rodapés dentro do apartamento.]"
+            </p>
+            <div class="testimonial-meta">
+              <strong class="testimonial-name">[Nome do Cliente 02]</strong>
+              <span class="testimonial-role">[Proprietário Residencial] · [Cidade - SC]</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              "[Espaço para depoimento do cliente 03 sobre a produtividade e acabamento da pintura airless e aplicação de massa mecanizada em obra comercial.]"
+            </div>
+            <div class="testimonial-meta">
+              <strong class="testimonial-name">[Nome do Cliente 03]</strong>
+              <span class="testimonial-role">[Engenheiro / Construtora parceira] · [Cidade - SC]</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marcas / Condominios atendidos -->
+        <div class="partners-block">
+          <p class="partners-label">CONDOMÍNIOS E PARCEIROS ATENDIDOS</p>
+          <div class="partners-list">
+            <span class="partner-item">[Condomínio ou Construtora 01]</span>
+            <span class="partner-separator">·</span>
+            <span class="partner-item">[Condomínio ou Construtora 02]</span>
+            <span class="partner-separator">·</span>
+            <span class="partner-item">[Condomínio ou Construtora 03]</span>
+            <span class="partner-separator">·</span>
+            <span class="partner-item">[Condomínio ou Construtora 04]</span>
+          </div>
+        </div>
+
+        <!-- Faixa de Certificacoes e Dados Oficiais -->
+        <div class="compliance-strip">
+          <div class="compliance-item">
+            <span class="compliance-caption">REGULARIDADE FISCAL</span>
+            <strong class="compliance-data">CNPJ [preencher]</strong>
+          </div>
+          <div class="compliance-divider"></div>
+          <div class="compliance-item">
+            <span class="compliance-caption">TERMO FORMAL</span>
+            <strong class="compliance-data">Garantia de [preencher]</strong>
+          </div>
+          <div class="compliance-divider"></div>
+          <div class="compliance-item">
+            <span class="compliance-caption">SEGURANÇA DO TRABALHO</span>
+            <strong class="compliance-data">Seguro e equipe com NR-35 e NR-18</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Area de atendimento -->
+    <section class="coverage-section" id="cobertura">
+      <div class="container">
+        <div class="coverage-wrapper">
+          <div class="coverage-header">
+            <div class="section-filet"></div>
+            <p class="section-label">07 · COBERTURA</p>
+            <h2 class="section-title">Atendemos o litoral catarinense.</h2>
+            <p class="coverage-text">
+              Nossa base operacional desloca equipes e maquinário para obras residenciais, prediais e comerciais nas principais cidades da faixa litorânea de Santa Catarina:
+            </p>
+          </div>
+
+          <div class="coverage-cities-block">
+            <!-- Placeholder das cidades atendidas -->
+            <p class="cities-list-text">
+              [Cidades atendidas: Balneário Camboriú, Itajaí, Itapema, Navegantes, Porto Belo, Bombinhas, Penha, Piçarras, Joinville e Florianópolis]
+            </p>
+            <p class="cities-note">
+              Seu imóvel está em outra localidade do litoral de SC? Consulte nossa equipe sobre disponibilidade de logística técnica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CTA Final -->
+    <section class="final-cta-section" id="contato">
+      <div class="final-cta-diagonal-decor" aria-hidden="true"></div>
+      <div class="container final-cta-container">
+        <div class="final-cta-content">
+          <div class="section-filet filet-white"></div>
+          <p class="section-label label-white">ATENDIMENTO DIRETO</p>
+          <h2 class="final-cta-title">Vamos conversar sobre a sua obra?</h2>
+          <p class="final-cta-subtitle">
+            Mande fotos ou a metragem pelo WhatsApp e receba um orçamento sem compromisso.
+          </p>
+          <div class="final-cta-buttons">
+            <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20minha%20obra." target="_blank" rel="noopener" class="btn btn-solid-white btn-lg">
+              Pedir orçamento pelo WhatsApp
             </a>
           </div>
+          <p class="final-cta-microcopy">
+            Resposta ágil em horário comercial · Visitas técnicas com horário agendado
+          </p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-col brand-col">
-        <img src="assets/images/logo-horizontal-white.png" alt="JA Pinturas" class="footer-logo">
-        <p class="footer-desc">
-          Excelência, requinte e proteção em pintura residencial, predial e comercial. Cuidamos do seu patrimônio com a qualidade que ele merece.
-        </p>
-        <div class="social-links">
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <!-- 11. Rodape -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#inicio" class="footer-logo-link" aria-label="JA Pinturas Inicio">
+            <img src="assets/logo-ja.svg" alt="JA Pinturas" class="footer-logo" width="140" height="38">
+          </a>
+          <p class="footer-tagline">
+            Pintura e acabamento técnico no litoral de Santa Catarina. Obras prediais, comerciais e residenciais com maquinário profissional.
+          </p>
+        </div>
+
+        <div class="footer-contact-col">
+          <span class="footer-heading">CANAIS DE CONTATO</span>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="contact-label">WhatsApp:</span>
+              <a href="https://wa.me/5547992287236" target="_blank" rel="noopener" class="contact-value">(47) 99228-7236</a>
+            </li>
+            <li>
+              <span class="contact-label">Instagram:</span>
+              <a href="https://instagram.com/j.a_pinturas_litoral" target="_blank" rel="noopener" class="contact-value">@j.a_pinturas_litoral</a>
+            </li>
+            <li>
+              <span class="contact-label">Atendimento:</span>
+              <span class="contact-value">Segunda a Sábado, 07:30 às 18:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-legal-col">
+          <span class="footer-heading">DADOS DA EMPRESA</span>
+          <ul class="footer-legal-list">
+            <li>CNPJ: [preencher]</li>
+            <li>Região: [cidades atendidas] · SC</li>
+            <li>Equipe treinada NR-35 e NR-18</li>
+          </ul>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4 class="footer-title">Navegação</h4>
-        <ul class="footer-links">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Nossos Serviços</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#depoimentos">Avaliações</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-title">Serviços</h4>
-        <ul class="footer-links">
-          <li><a href="#servicos">Pintura Residencial</a></li>
-          <li><a href="#servicos">Pintura Predial & Fachadas</a></li>
-          <li><a href="#servicos">Pintura Comercial</a></li>
-          <li><a href="#servicos">Cimento Queimado & Texturas</a></li>
-          <li><a href="#servicos">Impermeabilizações</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-title">Atendimento</h4>
-        <ul class="footer-contact">
-          <li><i class="fa-solid fa-location-dot"></i> Atendemos Toda a Região</li>
-          <li><i class="fa-brands fa-whatsapp"></i> (00) 00000-0000</li>
-          <li><i class="fa-solid fa-envelope"></i> contato@japinturas.com.br</li>
-          <li><i class="fa-solid fa-clock"></i> Seg a Sáb: 07h30 às 18h</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-flex">
-        <p>© 2026 JA Pinturas. Todos os direitos reservados.</p>
-        <p class="created-by">Desenvolvido com excelência por <a href="https://github.com/gabrielcriaecomunica" target="_blank">Gabriel Cria & Comunica</a></p>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 JA Pinturas. Todos os direitos reservados.
+        </p>
+        <p class="footer-dev">
+          Desenvolvido por <a href="https://github.com/gabrielcriaecomunica" target="_blank" rel="noopener">Gabriel Cria & Comunica</a>
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20um%20orçamento%20com%20a%20JA%20Pinturas." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span class="whatsapp-tooltip">Orçamento Grátis via WhatsApp</span>
+  <!-- 12. Botao Flutuante de WhatsApp (Azul Royal, quadrado com cantos levemente arredondados, icone branco em linha fina) -->
+  <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20minha%20obra." class="floating-wa-btn" target="_blank" rel="noopener" aria-label="Pedir orçamento pelo WhatsApp (47) 99228-7236">
+    <svg class="wa-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    <span class="floating-wa-text">Orçamento</span>
   </a>
 
-  <!-- Custom Script -->
+  <!-- Script da Pagina -->
   <script src="script.js"></script>
 </body>
 </html>
