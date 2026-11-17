@@ -48,8 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
      2. SERVICOS: ACORDEAO NO CELULAR E PREVIEW NO DESKTOP
      ========================================================================== */
   const serviceRows = document.querySelectorAll('.service-row');
+  const previewFigure = document.getElementById('preview-figure');
+  const previewImg = document.getElementById('preview-img');
+  const previewPlaceholder = document.getElementById('preview-placeholder');
   const previewCode = document.getElementById('preview-code');
+  const placeholderCode = document.getElementById('placeholder-code');
   const previewCaption = document.getElementById('preview-caption');
+  const previewEditorialCaption = document.getElementById('preview-editorial-caption');
   const previewNote = document.getElementById('preview-note');
 
   function updateDesktopPreview(row) {
@@ -57,10 +62,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const num = row.getAttribute('data-service') || '01';
     const photo = row.getAttribute('data-photo') || '';
     const detail = row.getAttribute('data-detail') || '';
+    const imgSrc = row.getAttribute('data-img') || '';
 
-    if (previewCode) previewCode.textContent = num.padStart(2, '0');
-    if (previewCaption) previewCaption.textContent = photo;
     if (previewNote) previewNote.textContent = detail;
+    if (previewEditorialCaption) previewEditorialCaption.textContent = photo;
+
+    if (imgSrc) {
+      if (previewImg) {
+        previewImg.src = imgSrc;
+        previewImg.alt = photo;
+      }
+      if (previewCode) previewCode.textContent = num.padStart(2, '0');
+      if (previewFigure) previewFigure.style.display = 'block';
+      if (previewPlaceholder) previewPlaceholder.style.display = 'none';
+    } else {
+      if (previewFigure) previewFigure.style.display = 'none';
+      if (previewPlaceholder) {
+        previewPlaceholder.style.display = 'flex';
+        if (placeholderCode) placeholderCode.textContent = num.padStart(2, '0');
+        if (previewCaption) previewCaption.textContent = photo;
+      }
+    }
 
     serviceRows.forEach(r => r.classList.remove('is-active'));
     row.classList.add('is-active');

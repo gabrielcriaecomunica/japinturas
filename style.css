@@ -630,6 +630,35 @@ p {
   min-height: 160px;
 }
 
+.service-real-photo-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-subtle);
+  overflow: hidden;
+  border: 1px solid var(--color-concrete-light);
+  background-color: var(--color-offwhite);
+}
+
+.service-real-img,
+.preview-real-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-editorial-caption {
+  font-size: 0.75rem;
+  color: var(--color-concrete);
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 8px 0 0;
+  border-top: 1px solid var(--color-concrete-light);
+  margin-top: 6px;
+  display: block;
+}
+
 .service-action-link {
   font-family: var(--font-title);
   font-size: 0.8125rem;

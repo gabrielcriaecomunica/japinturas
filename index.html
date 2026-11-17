@@ -184,7 +184,7 @@
               </div>
 
               <!-- Servico 01 -->
-              <article class="service-row is-active" data-service="1" data-photo="Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco" data-detail="Tratamento preventivo contra maresia, recuperação de fissuras e acabamento elástico de longa duração.">
+              <article class="service-row is-active" data-service="1" data-photo="Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco" data-detail="Tratamento preventivo contra maresia, recuperação de fissuras e acabamento elástico de longa duração." data-img="assets/fotos/restauracao-edificios.jpg">
                 <div class="service-row-summary" tabindex="0" role="button" aria-expanded="true">
                   <span class="service-number">01</span>
                   <div class="service-meta">
@@ -200,9 +200,10 @@
                   </div>
                   <div class="service-ideal-tag">IDEAL PARA CONDOMÍNIOS E SÍNDICOS</div>
                   <div class="service-mobile-photo">
-                    <div class="photo-placeholder" role="img" aria-label="Foto: restauração de fachada predial com recuperação de reboco">
-                      <p class="placeholder-caption">Foto: restauração de fachada predial com recuperação de reboco</p>
-                    </div>
+                    <figure class="service-real-photo-wrap">
+                      <img src="assets/fotos/restauracao-edificios.jpg" alt="Equipe da JA Pinturas em andaime executando restauração de fachada com hidrojateamento e aplicação de reboco" class="service-real-img" loading="lazy" width="800" height="600">
+                      <figcaption class="photo-editorial-caption">Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco</figcaption>
+                    </figure>
                   </div>
                   <a href="https://wa.me/5547992287236?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20Restauração%20de%20edifícios." target="_blank" rel="noopener" class="service-action-link">
                     Pedir orçamento deste serviço →
@@ -359,10 +360,17 @@
           <aside class="services-preview-panel" aria-hidden="true">
             <div class="preview-sticky-wrapper">
               <div class="preview-box">
-                <div class="photo-placeholder preview-image-placeholder">
-                  <span class="preview-service-code" id="preview-code">01</span>
-                  <p class="placeholder-caption" id="preview-caption">Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco</p>
+                <div class="preview-media-container" id="preview-media-container">
+                  <figure class="service-real-photo-wrap" id="preview-figure">
+                    <img src="assets/fotos/restauracao-edificios.jpg" alt="Restauração de fachada predial com hidrojateamento e reboco" class="preview-real-img" id="preview-img" width="800" height="600">
+                    <span class="preview-service-code" id="preview-code">01</span>
+                  </figure>
+                  <div class="photo-placeholder preview-image-placeholder" id="preview-placeholder" style="display: none;">
+                    <span class="preview-service-code" id="placeholder-code">01</span>
+                    <p class="placeholder-caption" id="preview-caption">Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco</p>
+                  </div>
                 </div>
+                <figcaption class="photo-editorial-caption" id="preview-editorial-caption">Foto: restauração de fachada predial com hidrojateamento e recuperação de reboco</figcaption>
                 <div class="preview-caption-block">
                   <span class="preview-note-title">DETALHE OPERACIONAL</span>
                   <p class="preview-note-text" id="preview-note">Tratamento preventivo contra maresia, recuperação de fissuras e acabamento elástico de longa duração.</p>
