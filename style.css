@@ -643,8 +643,30 @@ p {
 .preview-real-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
+  max-height: 460px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.gallery-real-photo-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-subtle);
+  overflow: hidden;
+  border: 1px solid var(--color-concrete-light);
+  background-color: var(--color-offwhite);
+}
+
+.gallery-real-img {
+  width: 100%;
+  height: auto;
+  min-height: 220px;
+  max-height: 380px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
